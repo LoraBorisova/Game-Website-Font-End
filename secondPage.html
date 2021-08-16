@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<title>Gaming Portal | Games</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="StyleSheet.css" type="text/css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.menu {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+</style>
+
+<div class="navbar">
+  <div class="row1 padding black">
+    <div class="col s3">
+      <a href="index.html" class="button block black" style="font-weight:bold">HOME</a>
+    </div>
+    <div class="col s3">
+      <a href="secondPage.html" class="button block black" style="font-weight:bold">GAMES</a>
+    </div>
+    <div class="col s3">
+      <a href="thirdPage.html" class="button block black" style="font-weight:bold">NEWS</a>
+    </div>
+    <div class="col s3">
+      <a href="fourthPage.html" class="button block black" style="font-weight:bold">INFORMATION</a>
+    </div>
+  </div>
+</div>
+
+</head>
+<body style="background-color:black">
+<div class="header-image">
+  <div class="header-text" style="padding: 24px">
+    <h1 class="tittle2" style="color: white; text-align:center; font-weight: 1000; ">
+	Choose your game here!</h1>
+    <p class="paragraph-size" style="color: white; font-family: Verdana, sans-serif;">Select a filter.</p>
+	<br>
+
+  </div>
+</div>
+<div class="background grayscale">
+
+<div class="container" id="gallery">
+<div class="stg position" style="max-width:760px ">
+	<div id="myBtnContainer" class="btnCont">
+		<button class="btn active paragraph-size" onclick="filterSelection('all')">Show all</button>
+		<button class="btn paragraph-size" onclick="filterSelection('mmo')">MMORPG</button>
+		<button class="btn paragraph-size" onclick="filterSelection('platformer')">Platformer</button>
+		<button class="btn paragraph-size" onclick="filterSelection('puzzle')">Puzzle</button>
+		<button class="btn paragraph-size" onclick="filterSelection('rpg')">RPG</button>  
+	</div>
+</div>
+
+<div class="row">
+  <div class="column content-games filterDiv mmo"><img src="https://i0.wp.com/www.oldschoolgamermagazine.com/wp-content/uploads/2020/11/wowshadow.jpg?fit=323%2C433&ssl=1" class="hover-shadow">
+    <p style="color:white; font-family: Verdana, sans-serif; font-weight: bold" class="paragraph-size">World Of Warcraft: Shadowlands</p>
+	<p style="color:white; font-family: Verdana, sans-serif;" class="paragraph-size"><a href="https://worldofwarcraft.com/en-us/shadowlands">More Info</a> |
+	<a href="https://eu.shop.battle.net/en-gb/product/world-of-warcraft-shadowlands">Buy</a> |
+	<a href="https://www.youtube.com/watch?v=s4gBChg6AII">Trailer</a>
+	</p></div>
+  <div class="column content-games  filterDiv platformer"><img src="https://i.pinimg.com/originals/ef/f2/08/eff208d915d95734d35c031eb8163f09.png"class="hover-shadow">
+			<p style="color:white; font-family: Verdana, sans-serif; font-weight: bold" class="paragraph-size">Celeste</p>
+			<p style="color:white; font-family: Verdana, sans-serif;" class="paragraph-size"><a href="http://www.celestegame.com/">More Info</a> |
+	<a href="https://store.steampowered.com/app/504230/Celeste/">Buy</a> |
+	<a href="https://www.youtube.com/watch?v=70d9irlxiB4">Trailer</a>
+	</p></div>
+  <div class="column content-games filterDiv rpg"><img class="img" src="https://images-na.ssl-images-amazon.com/images/I/913m4BOW-NL.jpg" class="hover-shadow">
+  	<p style="color:white; font-family: Verdana, sans-serif; font-weight: bold" class="paragraph-size">Fallout 4</p>
+			<p style="color:white; font-family: Verdana, sans-serif;" class="paragraph-size"><a href="https://fallout.bethesda.net/en/games/fallout-4">More Info</a> |
+	<a href="https://store.steampowered.com/app/377160/Fallout_4/">Buy</a> |
+	<a href="https://www.youtube.com/watch?v=XW7Of3g2JME">Trailer</a></p></div>
+  <div class="column content-games filterDiv platformer"><img class="img" src="https://store-images.s-microsoft.com/image/apps.37905.13670972585585116.7f29dc82-c969-4e89-aaf9-7c0e3f52d890.2e5a9c92-cf00-4c10-ae28-264c564478c3" class="hover-shadow">
+  <p style="color:white; font-family: Verdana, sans-serif; font-weight: bold" class="paragraph-size">Cuphead</p>
+			<p style="color:white; font-family: Verdana, sans-serif;" class="paragraph-size"><a href="http://www.cupheadgame.com/">More Info</a> |
+	<a href="https://store.steampowered.com/app/268910/Cuphead/">Buy</a> |
+	<a href="https://www.youtube.com/watch?v=NN-9SQXoi50">Trailer</a></p></div>
+  <div class="column content-games filterDiv mmorpg"><img class="img" src="https://cdn-products.eneba.com/resized-products/y7Hp3KY_350x200_1x-0.jpg"class="hover-shadow"> 
+  <p style="color:white; font-family: Verdana, sans-serif; font-weight: bold" class="paragraph-size">FINAL FANTASY XIV Online</p>
+			<p style="color:white; font-family: Verdana, sans-serif;" class="paragraph-size"><a href="https://www.finalfantasyxiv.com/">More Info</a> |
+	<a href="https://store.steampowered.com/app/39210/FINAL_FANTASY_XIV_Online/">Buy</a> |
+	<a href="https://www.youtube.com/watch?v=2XbxPsWFyU8">Trailer</a></p></div>
+  <div class="column content-games filterDiv puzzle platformer"><img class="img" src="https://image.api.playstation.com/vulcan/ap/rnd/202011/1922/QG7BmTE2ygLQvpyChA7mYWbA.jpg"class="hover-shadow">
+    <p style="color:white; font-family: Verdana, sans-serif; font-weight: bold" class="paragraph-size">Little Nightmares II</p>
+			<p style="color:white; font-family: Verdana, sans-serif;" class="paragraph-size"><a href="https://en.bandainamcoent.eu/little-nightmares/little-nightmares-ii">More Info</a> |
+	<a href="https://store.steampowered.com/app/860510/Little_Nightmares_II/">Buy</a> |
+	<a href="https://www.youtube.com/watch?v=AI9zBBTyX-E">Trailer</a></p></div>
+  <div class="column content-games filterDiv puzzle"><img class="img" src="https://s1.gaming-cdn.com/images/products/8562/orig/it-takes-two-english-only-cover.jpg">
+    <p style="color:white; font-family: Verdana, sans-serif; font-weight: bold" class="paragraph-size">It Takes Two</p>
+			<p style="color:white; font-family: Verdana, sans-serif;" class="paragraph-size"><a href="https://www.ea.com/games/it-takes-two">More Info</a> |
+	<a href="https://store.steampowered.com/app/1426210/It_Takes_Two/">Buy</a> |
+	<a href="https://www.youtube.com/watch?v=ohClxMmNLQQ">Trailer</a></p></div>
+  <div class="column content-games filterDiv rpg"><img class="img" src="https://cdn-products.eneba.com/resized-products/xrpmydnu9rpxvxfjkiu7_350x200_1x-0.jpg">
+    <p style="color:white; font-family: Verdana, sans-serif; font-weight: bold" class="paragraph-size">Stardew Valley</p>
+			<p style="color:white; font-family: Verdana, sans-serif;" class="paragraph-size"><a href="https://www.stardewvalley.net/">More Info</a> |
+	<a href="https://store.steampowered.com/app/413150/Stardew_Valley/">Buy</a> |
+	<a href="https://www.youtube.com/watch?v=ot7uXNQskhs">Trailer</a></p></div>
+  <div class="column content-games filterDiv platformer"><img class="img" src="https://static.wikia.nocookie.net/hollowknight/images/a/a1/HK_first_cover_art.png/revision/latest?cb=20201215163524">
+    <p style="color:white; font-family: Verdana, sans-serif; font-weight: bold" class="paragraph-size">Hollow Knight</p>
+			<p style="color:white; font-family: Verdana, sans-serif;" class="paragraph-size"><a href="https://www.hollowknight.com/">More Info</a> |
+	<a href="https://store.steampowered.com/app/367520/Hollow_Knight/">Buy</a> |
+	<a href="https://www.youtube.com/watch?v=UAO2urG23S4">Trailer</a></p></div>
+  <div class="column content-games filterDiv rpg"><img class="img" src="https://images-eu.ssl-images-amazon.com/images/I/510RHE9vePL.jpg">
+    <p style="color:white; font-family: Verdana, sans-serif; font-weight: bold" class="paragraph-size">The Witcher 3: Wild Hunt</p>
+			<p style="color:white; font-family: Verdana, sans-serif;" class="paragraph-size"><a href="https://thewitcher.com/en/witcher3">More Info</a> |
+	<a href="https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/">Buy</a> |
+	<a href="https://www.youtube.com/watch?v=XHrskkHf958">Trailer</a></p></div>
+  <div class="column content-games filterDiv mmorpg"><img class="img" src="https://store-images.s-microsoft.com/image/apps.24654.68188801292582061.1f8419a5-e1bd-48fe-b9cb-b330d108d94f.93e8e991-a3f1-4f0c-882a-52076c9e3283">
+    <p style="color:white; font-family: Verdana, sans-serif; font-weight: bold" class="paragraph-size">The Elder Scrolls Online</p>
+			<p style="color:white; font-family: Verdana, sans-serif;" class="paragraph-size"><a href="https://www.elderscrollsonline.com/en-us/home">More Info</a> |
+	<a href="https://store.steampowered.com/app/306130/The_Elder_Scrolls_Online/">Buy</a> |
+	<a href="https://www.youtube.com/watch?v=3EfBIY5rig0">Trailer</a></p></div>
+  <div class="column content-games filterDiv platformer"><img class="img" src="https://s3.gaming-cdn.com/images/products/932/orig/terraria-cover.jpg">
+    <p style="color:white; font-family: Verdana, sans-serif; font-weight: bold" class="paragraph-size">Terraria</p>
+			<p style="color:white; font-family: Verdana, sans-serif;" class="paragraph-size"><a href="https://terraria.org/">More Info</a> |
+	<a href="https://store.steampowered.com/app/105600/Terraria/">Buy</a> |
+	<a href="https://www.youtube.com/watch?v=w7uOhFTrrq0">Trailer</a></p></div>
+  <div class="column content-games filterDiv puzzle"><img class="img" src="https://static-cdn.jtvnw.net/ttv-boxart/Dorfromantik.jpg">
+    <p style="color:white; font-family: Verdana, sans-serif; font-weight: bold" class="paragraph-size">Dorfromantik</p>
+			<p style="color:white; font-family: Verdana, sans-serif;" class="paragraph-size"><a href="https://toukana.com/dorfromantik/">More Info</a> |
+	<a href="https://store.steampowered.com/app/1455840/Dorfromantik/">Buy</a> |
+	<a href="https://www.youtube.com/watch?v=5Qs9i-y0vbE">Trailer</a></p></div>
+  <div class="column content-games filterDiv rpg"><img class="img" src="https://i.redd.it/nq226pqvvpg61.png">
+    <p style="color:white; font-family: Verdana, sans-serif; font-weight: bold" class="paragraph-size">Mass Effect Legendary Edition</p>
+			<p style="color:white; font-family: Verdana, sans-serif;" class="paragraph-size"><a href="https://www.ea.com/games/mass-effect/mass-effect-legendary-edition">More Info</a> |
+	<a href="https://store.steampowered.com/app/1328670/Mass_Effect_Legendary_Edition/">Buy</a> |
+	<a href="https://www.youtube.com/watch?v=n8i53TtQ6IQ">Trailer</a></p></div>
+	<div class="column content-games filterDiv rpg"><img class="img" src="https://static-cdn.jtvnw.net/ttv-boxart/Valheim.jpg">
+    <p style="color:white; font-family: Verdana, sans-serif; font-weight: bold" class="paragraph-size">Valheim</p>
+			<p style="color:white; font-family: Verdana, sans-serif;" class="paragraph-size"><a href="https://www.valheimgame.com/">More Info</a> |
+	<a href="https://store.steampowered.com/app/892970/Valheim/">Buy</a> |
+	<a href="https://www.youtube.com/watch?v=ys1G4xjE8Y0">Trailer</a></p></div>
+	<div class="column content-games filterDiv puzzle platformer"><img class="img" src="https://store-images.s-microsoft.com/image/apps.18799.14047496556148589.9fda5cef-7995-4dbb-a626-66d2ab3feb4f.1e167626-8b7d-47b4-9fe5-d06a43ac6677">
+    <p style="color:white; font-family: Verdana, sans-serif; font-weight: bold" class="paragraph-size">Ori and the Will of the Wisps</p>
+			<p style="color:white; font-family: Verdana, sans-serif;" class="paragraph-size"><a href="https://www.orithegame.com/">More Info</a> |
+	<a href="https://store.steampowered.com/app/1057090/Ori_and_the_Will_of_the_Wisps/">Buy</a> |
+	<a href="https://www.youtube.com/watch?v=2reK8k8nwBc">Trailer</a></p></div>
+</div>
+</div>
+</div>
+</body>
+<footer class="container position" style="background-color:white">  
+<p>Find us on social media.</p>
+  <div class="icons-size icons-padding">
+    <i class="fa fa-facebook-official icon-opacity"></i>
+    <i class="fa fa-instagram icon-opacity"></i>
+    <i class="fa fa-snapchat icon-opacity"></i>
+    <i class="fa fa-pinterest-p icon-opacity"></i>
+    <i class="fa fa-twitter icon-opacity"></i>
+ </div>
+</footer>
+
+<script src="TheBestCatalogue.js"></script>
+<script src="filterScript.js"></script>
+<script src="firstSlideText.js"></script>
+<script src="secondSlideText.js"></script>
+<script src="thirdSlideText.js"></script>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+<script src="new.js"></script>
+</html>
